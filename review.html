@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Customer Reviews</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url(rt.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgba(112, 52, 15, 0.53); /* Dark brown header */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff5e1db; /* Light brown background for content */
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #6f4f37; /* Dark brown color for headings */
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            color: #6f4f37; /* Dark brown label color */
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .form-group input, 
+        .form-group textarea {
+            width: 96%;
+            padding: 12px;
+            border: 1px solid #c4a08d; /* Soft brown border */
+            border-radius: 5px;
+            font-size: 1rem;
+            background-color: #f1e3d3; /* Light brown background for inputs */
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .review-section {
+            margin-top: 40px;
+        }
+
+        .review {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1px solid #c4a08d;
+        }
+
+        .review h3 {
+            margin: 0;
+            color: #6f4f37;
+        }
+
+        .review p {
+            color: #333;
+            font-size: 1rem;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 1rem;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #6f4f37;
+            color: white;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #6f4f37; /* Dark brown button */
+            color: white;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #5a3b2a; /* Slightly darker brown on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Café Customer Reviews</h1>
+    </header>
+
+    <div class="container">
+        <h2>Leave Us a Review</h2>
+
+        <!-- Review Submission Form -->
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="review">Your Review:</label>
+                <textarea id="review" name="review" rows="5" placeholder="Write your review here..." required></textarea>
+            </div>
+
+            <button type="submit">Submit Review</button>
+        </form>
+
+        <!-- Customer Reviews Section -->
+        <div class="review-section">
+            <h2>What Our Customers Are Saying</h2>
+
+            <!-- Review 1 -->
+            <div class="review">
+                <h3>John Doe</h3>
+                <p>"I had a wonderful experience at the café! The coffee was amazing, and the atmosphere was cozy and inviting. Highly recommend!"</p>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review">
+                <h3>Jane Smith</h3>
+                <p>"The staff were incredibly friendly, and I loved the pastries. It’s my new favorite spot to relax and enjoy a good book!"</p>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review">
+                <h3>Mark Johnson</h3>
+                <p>"Great place to grab a coffee with friends. The vibe is perfect for hanging out, and the WiFi is strong for working remotely."</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Thank you for sharing your feedback! We appreciate your support.</p>
+    </div>
+
+</body>
+</html>

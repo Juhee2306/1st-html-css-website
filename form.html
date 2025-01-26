@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Reservation</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url(bo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color:rgba(126, 77, 16, 0.892); /* Light brown background for form */
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #ede8e5; /* Dark brown color for the title */
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            color: #e0d4ca; /* Dark brown label color */
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .form-group input, 
+        .form-group select, 
+        .form-group textarea {
+            width: 96%;
+            padding: 15px;
+            border: 1px solid #c4a08d; /* Soft brown border */
+            border-radius: 5px;
+            font-size: 1rem;
+            background-color: #f1e3d3bb; /* Light brown background for inputs */
+        }
+
+        .form-group input[type="date"], 
+        .form-group input[type="time"] {
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #6f4f37; /* Dark brown button */
+            color: white;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #5a3b2a; /* Slightly darker brown on hover */
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: 20px;
+            color: #6f4f37;
+        }
+        
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Make a Reservation</h2>
+        <form action="#" method="POST">
+            <!-- Customer Details -->
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Reservation Details -->
+            <div class="form-group">
+                <label for="date">Reservation Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Reservation Time:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+
+            <div class="form-group">
+                <label for="people">Number of People:</label>
+                <select id="people" name="people" required>
+                    <option value="1">1 person</option>
+                    <option value="2">2 people</option>
+                    <option value="3">3 people</option>
+                    <option value="4">4 people</option>
+                    <option value="5">5 people</option>
+                    <option value="6">6 people</option>
+                    <option value="7">7 people</option>
+                    <option value="8">8 people</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="special-request">Special Requests (optional):</label>
+                <textarea id="special-request" name="special-request" rows="4" placeholder="Any special requests or requirements?" ></textarea>
+            </div>
+
+            <button type="submit">Make Reservation</button>
+        </form>
+
+        <div class="footer">
+            <p>Thank you for choosing our cafe! We look forward to serving you.</p>
+        </div>
+    </div>
+
+</body>
+</html>
